@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
@@ -10,11 +10,9 @@ function App() {
     <Router>
       <Fragment>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Portfolio />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Portfolio />} />
+        </Routes>
         <Footer />
       </Fragment>
     </Router>
