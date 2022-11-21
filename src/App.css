@@ -1,0 +1,366 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+p.para {
+font:normal 500 16px/25px ;
+color: #777777;
+}
+/* navbar */
+.navbar {
+  background:#ffffff;
+  box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+  z-index: 999;
+  transition: background 6s ease;
+} 
+.navbar .logoImg{
+height: 10vh;
+}
+.navbar a{
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar  .link:hover {
+  background-color: #14bffc;
+  color: white;
+}
+
+.navbar .solid {
+  background-color:white;
+  opacity: .1;
+}
+
+/* Scroll Up */
+#button {
+  display: inline-block;
+  background-color: #333;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #005b96;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text-secondary{
+  color:white;
+}
+
+/* Home */
+.main .jhayImg{
+height: 50vh;
+background-size: cover;
+width: 100%;
+border-radius: 50%;
+}
+/*end of home */
+
+/* Home Area*/
+.main #section-1{
+padding:12rem 4rem;
+background-image: url('./images/background/background.jpeg');
+background-attachment: fixed;
+width: 100%;
+object-fit: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+background-size:cover;
+}
+.main .italicText{
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.main .home-area .para{
+  font-size: 30px;
+}
+.main .home-area .strong{
+  font-weight: bolder;
+  font-size:35px;
+}
+.italicText1{
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 15PX;
+}
+/* Start About Area */
+.main .about-area{
+  padding:2rem 4rem;
+  min-height: 100vh;
+  background: #ffffff;
+box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+}
+.main .about-area .about-image{
+  height: 50vh;
+  padding-top:75px;
+  background-position: center center;
+  margin-left: 100px;
+}
+.main .about-area .about-title {
+  padding-top:50px;
+}
+
+.main .about-area .about-title h2 > span{
+display:block;
+font:normal bold 40px/60px;
+letter-spacing: 21px;
+}
+
+.main .about-area .about-title .paragraph > p{
+padding: .4rem 0;
+}
+.primary-button{
+background:linear-gradient(90deg,#14bffc 0%, #14bffc 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background .6s ease;
+  box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+}
+.button.primary-button:hover{
+background:whitesmoke;
+background-clip: padding-box;
+color: black;
+}
+
+.button.primary-button::after{
+position: absolute;
+top: -2px;left: -2px;
+bottom: -2px; right: -2px;
+content: '';
+z-index: -1;
+
+}
+/*skills*/
+.octo, .octo div {
+  margin: 0 auto;
+    transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.octo, .octo div {
+  width: 270px;
+  height: 270px;
+}
+.octo {
+  transform: rotate(45deg);
+}
+.octo1 {
+  transform: rotate(-45deg);
+}
+/* Services Area */
+.main .services-area{
+padding:5rem 2rem;
+background: #ffffff;
+box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+}
+
+.main .services-area .services-title{
+padding:0 14rem;
+
+}
+
+
+
+.main .services-area .services-title h1{
+font-size: 35px;
+}
+.main > .services-area .services{
+  
+background: rgba(248,252,253,0.973);
+padding:10px 0;
+width: 16rem;
+margin-bottom: 5rem;
+transition: box-shadow .7s ease;
+}
+
+.main .services-list .services-img img{
+  height: 25vh;
+  width: 93%;
+  margin:2px;
+  object-fit: cover;
+}
+
+.main > .services-area .services:hover {
+box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+}
+/* Project Area */
+
+
+.main .project-area{
+  padding: 7rem 0;
+  background:black; /* #14bffc; */
+  color:white;
+  box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+  
+}
+
+.main .project-area .button-group button{
+  background:transparent;
+  border: none;
+  font: normal 500 16px/130px;
+  text-transform: uppercase;
+}
+
+.main .project-area .button-group button + button{
+  padding-left: 3rem;
+}
+.main .project-area .grid .our-project > .title h4{
+  font:normal 700 25px/12px;
+}
+.main .project-area .grid .our-project .img img{
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main .project-area .grid .our-project .img a:hover img{
+  filter:brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+ 
+}
+/* End Project Area */
+/*Contact Me*/
+
+
+.main .about-area{
+background: #ffffff;
+box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+}
+.main .about-area .card{
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+  margin:0 auto;
+}
+footer{
+  background-color: black;
+  color:white;
+}
+
+
+footer.footer-area .footerImg{
+  height: 5vh;
+}
+
+footer.footer-area .social h5{
+  font:normal 500 23px/30px;
+}
+
+
+footer.footer-area .social a > i{
+  font-size: 22px;
+  padding: 2rem;
+  color:white;
+}
+
+
+
+footer.footer-area .social a:hover > i{
+  color:#14bffc;
+}
+/* if the viewport is equal to 729 or less than that */
+
+@media only screen and (max-width: 792px){
+.main > .about-area .about-title h2 > span{
+    font-size: 31px;
+    letter-spacing: 10px;
+}
+
+.main .about-area .about-title p{
+    padding: 0%;
+}
+.main .about-area .about-image{
+  margin-left: 0;
+}
+
+.octo, .octo div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.octo, .octo div {
+  width: 270px;
+  height: 270px;
+}
+.octo {
+  transform: rotate(45deg);
+}
+.octo1 {
+  transform: rotate(-45deg);
+}
+.navbar .active, .link:hover {
+  background-color: transparent;
+  color:black;
+}
+
+}
+
+/* if the viewport is equal to 1910px or less than that */
+
+@media only screen and (max-width: 1910px){
+
+.navbar{
+    padding:1rem;
+}
+
+.container{
+    max-width: 90%;
+}
+
+.main .services-area .services-title,
+.main  .about-area{
+    padding: 3% 4%;
+}
+}
+
+
+.wrapper{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding:0 20px;
+}
+
+.contact-form{
+  max-width: 550px;
+  margin:0 auto;
+  background-color: rgba(0,0,0,0.8);
+}
