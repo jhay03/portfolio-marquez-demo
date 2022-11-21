@@ -11,10 +11,6 @@ const Skills = ({ fe, be, fs, db }) => {
           >
             Skills
           </h1>
-          {/* <p className="wow bounceIn para" data-wow-delay="2s">
-					These are the skills that I have as a Web Developer.
-														
-				</p> */}
         </div>
       </div>
       <div className="container services-list">
